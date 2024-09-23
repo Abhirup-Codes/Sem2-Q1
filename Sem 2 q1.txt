@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[absolute,overlay]{textpos} % For placing the passport photo
+
+% Define custom colors
+\definecolor{sectioncolor}{rgb}{0.1, 0.6, 0.8} % Cyan-ish color for section titles
+\definecolor{itemcolor}{rgb}{0.3, 0.3, 0.3} % Dark grey color for text
+
+% Set up page for textpos package
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+
+\title{\textbf{Resume}}
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{textblock}{30}(160, 10) 
+    \includegraphics[width=30mm, height=40mm]{30085323008 _BSc(CyberSecurity)_Abhirup} 
+\end{textblock}
+
+\maketitle
+
+% --- Personal Information ---
+\section*{\textcolor{sectioncolor}{Personal Information}}
+\begin{itemize}
+    \item \textbf{\textcolor{itemcolor}{Name:}} \textcolor{itemcolor}{Abhirup Mukherjee}
+    \item \textbf{\textcolor{itemcolor}{Address:}} \textcolor{itemcolor}{67/1, Shitalapara, Garh Shyamnagar-743127}
+    \item \textbf{\textcolor{itemcolor}{Telephone Number:}} \textcolor{itemcolor}{7003751561}
+    \item \textbf{\textcolor{itemcolor}{E-mail Address:}} \textcolor{itemcolor}{abhirupmukherje07@gmail.com}
+\end{itemize}
+
+% --- Educational Background ---
+\section*{\textcolor{sectioncolor}{Educational Background}}
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.5} % Increase row height
+\begin{tabular}{| p{4cm} | p{6cm} | p{3cm} |} % Using p{} for fixed-width columns
+\hline
+\textbf{Degree} & \textbf{Institution} & \textbf{Year of Graduation} \\ 
+\hline
+Bachelor of Science in Computer Science (Cyber Security) & MAKAUT & 2027(Pursuing) \\
+\hline
+ISC & Douglas Memorial H.S. School & 2023 \\
+\hline
+\end{tabular}
+\end{table}
+% --- Awards and Achievements ---
+\section*{\textcolor{sectioncolor}{Awards and Achievements}}
+\begin{itemize}
+    \item \textbf{\textcolor{itemcolor}{Olympiad Gold Medal}} \textcolor{itemcolor}{2016}
+    \item \textbf{\textcolor{itemcolor}{ICSE School Topper:}} \textcolor{itemcolor}{2021}
+\end{itemize}
+
+% --- Skills ---
+\section*{\textcolor{sectioncolor}{Skills}}
+\begin{itemize}
+    \item \textbf{\textcolor{itemcolor}{Programming Languages:}} \textcolor{itemcolor}{Java, Python, C}
+    \item \textbf{\textcolor{itemcolor}{Web Development:}} \textcolor{itemcolor}{HTML}
+    \item \textbf{\textcolor{itemcolor}{Database Management:}} \textcolor{itemcolor}{MySQL}
+    \item \textbf{\textcolor{itemcolor}{Languages Spoken:}} \textcolor{itemcolor}{English, Bengali, Hindi}
+\end{itemize}
+
+% --- Activities and Interests ---
+\section*{\textcolor{sectioncolor}{Activities and Interests}}
+\begin{itemize}
+    \item \textcolor{itemcolor}{Volunteering at local animal shelter}
+    \item \textcolor{itemcolor}{Playing the guitar and listening music}
+    \item \textcolor{itemcolor}{Reading crime and rom-com novels}
+\end{itemize}
+
+\end{document}
